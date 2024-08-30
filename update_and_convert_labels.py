@@ -21,11 +21,6 @@ def json_to_pascal_voc(json_file, output_dir):
         folder = ET.SubElement(annotation, "folder").text = "VOC2012"
         filename = ET.SubElement(annotation, "filename").text = file_name
         
-        source = ET.SubElement(annotation, "source")
-        ET.SubElement(source, "database").text = "The VOC2007 Database"
-        ET.SubElement(source, "annotation").text = "PASCAL VOC2007"
-        ET.SubElement(source, "image").text = "flickr"
-        
         size = ET.SubElement(annotation, "size")
         ET.SubElement(size, "width").text = str(width)
         ET.SubElement(size, "height").text = str(height)
