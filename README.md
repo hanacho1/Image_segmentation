@@ -31,8 +31,7 @@ python update_and_convert_labels.py --input_dir /path/to/json/folder --output_di
 ```bash
 python generate_mask_image.py
 ```
-3. Creating Custom Data Python Scripts
-### Reference code [custom dataset scripts](datasets/custom_dataset.py)
+3. Creating Custom Data Python Scripts : Reference code `datasets/custom_dataset.py`
 
 4. Training
 ```bash
