@@ -3,6 +3,7 @@ import xml.etree.ElementTree as ET
 from xml.dom import minidom
 import os
 import glob
+import argparse
 
 def json_to_pascal_voc(json_file, output_dir):
     with open(json_file, encoding='utf-8') as f:
@@ -78,7 +79,12 @@ def process_json_files(input_dir, output_dir):
         json_to_pascal_voc(json_file, output_dir)
 
 
-# Usage
-input_directory = r"D:\small object detection\data\split_data\val\json"
-output_directory = r"D:\small object detection\data\split_data\val\xml"
-process_json_files(input_directory, output_directory)
+def parse_args():
+    parser = argparse.ArgumentParser(description="Convert JSON annotations to Pascal VOC XML format.")
+    parser.add_argument("--input_dir", required=True, help="Directory containing JSON files.")
+    parser.add_argument("--output_dir", required=True, help="Directory to save Pascal VOC XML files.")
+    return parser.parse_args()
+
+if __name__ == "__main__":
+    args = parse_args()
+    process_json_files(args.input_dir, args.output_dir)
