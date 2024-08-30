@@ -10,7 +10,7 @@ This project is an example of training and evaluating deep learning models for s
 ## Overview
 This project involves the following key steps:
 1. Prepareing custom dataset: Converting label files in JSON format to XML format from images stored in Google Drive.  
-[Download the dataset from Google Drive](https://drive.google.com/drive/folders/14IpD1dDp3Gja7r7992enH2tmGjD4SYG_?usp=sharing)
+[The converted dataset can be downloaded from Google Drive](https://drive.google.com/drive/folders/14IpD1dDp3Gja7r7992enH2tmGjD4SYG_?usp=sharing)
 2. Training a deep learning model using the converted data.
 3. Segmentation small objects in test images using the trained model.
 
