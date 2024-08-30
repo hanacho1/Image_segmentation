@@ -25,14 +25,14 @@ docker run --shm-size=8g --gpus all -v path/to/desired/directory:/workspace -it 
 Before starting the training process, data preparation and conversion are necessary.
 1. Annotation format conversion
 ```bash
-pythonupdate_and_convert_labels.py --input_dir /path/to/json/folder --output_dir /path/to/xml/folder
+python update_and_convert_labels.py --input_dir /path/to/json/folder --output_dir /path/to/xml/folder
 ```
 2. Generate mask images
 ```bash
 python generate_mask_image.py
 ```
 3. Creating Custom Data Python Scripts
-# Reference code [custom dataset scripts](datasets/custom_dataset.py)
+### Reference code [custom dataset scripts](datasets/custom_dataset.py)
 
 4. Training
 ```bash
