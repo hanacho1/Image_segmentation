@@ -33,7 +33,7 @@ python generate_mask_image.py
 ```
 3. Creating Custom Data Python Scripts : Reference code `datasets/custom_dataset.py`
 
-4. Training
+4. Training [The trained file can be downloaded from Google Drive.](https://drive.google.com/drive/folders/1vJWjfuzRD5hUislXnHFliRi_u1MDnIMe?usp=sharing)
 ```bash
 python3 main.py --model deeplabv3plus_resnet101 --gpu_id 0,1,2 --dataset custom --lr 0.01 --crop_size 513 --batch_size 4 --output_stride 16  --save_val_results 
 ```
