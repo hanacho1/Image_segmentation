@@ -3,14 +3,14 @@ This project is an example of training and evaluating deep learning models for s
 
 ## Table of Contents
 1. [Overview](#overview)
-2. [Installation](#installation)
+2. [Create Docker Container](#create-docker-container)
 3. [Training](#training)
 4. [Testing](#testing)
 
 ## Overview
 This project involves the following key steps:
-1. Prepareing custom dataset: Converting label files in JSON format to XML format from images stored in Google Drive.
-[Download the dataset from Google Drive]([https://drive.google.com/uc?id=FILE_ID&export=download](https://drive.google.com/drive/folders/1XANY18zT8qBWTSP8uH8tW5PPtoHU-CEH?usp=drive_link](https://drive.google.com/drive/folders/1XANY18zT8qBWTSP8uH8tW5PPtoHU-CEH?usp=drive_link))
+1. Prepareing custom dataset: Converting label files in JSON format to XML format from images stored in Google Drive.  
+[Download the dataset from Google Drive](https://drive.google.com/drive/folders/14IpD1dDp3Gja7r7992enH2tmGjD4SYG_?usp=sharing)
 2. Training a deep learning model using the converted data.
 3. Segmentation small objects in test images using the trained model.
 
