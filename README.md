@@ -39,7 +39,7 @@ python3 main.py --model deeplabv3plus_resnet101 --gpu_id 0,1,2 --dataset custom 
 ```
 
 ## Testing
-Test images are saved in the 'test_result' folder.
+Test images are saved in the 'sample/test_result' folder.
 ```bash
 python3 predict.py --input ./testset --dataset custom --model deeplabv3plus_resnet101 --ckpt checkpoints/best_deeplabv3plus_resnet101_custom_os16.pth --save_val_results_to test_result
 ```
